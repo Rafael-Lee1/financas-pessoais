@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Finanças Pessoais</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div class="finance-manager">
+        <h2>Gerenciamento de Finanças Pessoais</h2>
+        <input type="text" id="description" placeholder="Descrição da Transação">
+        <input type="number" id="amount" placeholder="Valor">
+        <select id="transactionType">
+            <option value="income">Receita</option>
+            <option value="expense">Despesa</option>
+        </select>
+        <button onclick="addTransaction()">Adicionar Transação</button>
+        <div id="balance">Saldo: R$ 0.00</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="transactionList"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
